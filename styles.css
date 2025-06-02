@@ -84,3 +84,47 @@ p{
 #section-2-img-wrapper{
     max-width: 100%;
 }
+@media(min-width: 1024px){
+    nav ul{
+        display: flex;
+        align-items: center;
+        color: var(--Medium-Gray);
+        font-weight: 500;
+        gap: 30px;
+        font-size: 18px;
+    }
+    #nav-div-1{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    #menu-icon{
+        display: none;
+    }
+    nav button{
+        padding: 15px 25px;
+        border: 2px solid var(--Medium-Gray);
+        border-radius: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        cursor: pointer;
+        color: var(--Medium-Gray);
+        background-color: var(--Almost-White);
+    }
+     /* Main */
+     #hero-mobile{
+        display: none;
+    }
+
+    #hero-desktop{
+        display: block;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-height: 100%;
+    }
+    
+}
