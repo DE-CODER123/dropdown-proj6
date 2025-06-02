@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
@@ -34,7 +35,7 @@ body{
  }
 /* Main */
 /* Section-1 */
- #hero-desktop{
+ #desktop-hero{
     display: none;
  }
 
@@ -84,23 +85,23 @@ p{
 #section-2-img-wrapper{
     max-width: 100%;
 }
+
 @media(min-width: 1024px){
     nav ul{
         display: flex;
         align-items: center;
         color: var(--Medium-Gray);
         font-weight: 500;
-        gap: 30px;
+        gap:  30px;
         font-size: 18px;
     }
+
     #nav-div-1{
         display: flex;
-        align-items: center;
         gap: 30px;
+        align-items: center;
     }
-    ul{
-        list-style: none;
-    }
+
     #menu-icon{
         display: none;
     }
@@ -114,51 +115,64 @@ p{
         color: var(--Medium-Gray);
         background-color: var(--Almost-White);
     }
-     /* Main */
-     #hero-mobile{
+    /* Main */
+    #hero-mobile{
         display: none;
     }
 
     #hero-desktop{
         display: block;
     }
-    
     main{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        /* border: 1px solid red; */
-        margin: 0 auto;
+        max-height: 100%;
     }
+    #section-1{
+        /* border: 2px solid blue; */
+        flex: 1;
+        padding: 1rem 2rem;
+        max-width: 50%;
+    }
+
+    #section-1 img{
+        padding-left: 30px;
+        width: 90%;
+    }
+
     .section-2{
-        max-height: 100vh;
-        /* border: 1px solid #000; */
-        display: flex;
-        flex-direction: column;
+        /* border: 2px solid black; */
+        align-self: start;
         justify-content: start;
-        align-items: center;
-        max-width: 100%;
-        margin-left: 10px;
-        
+        flex: 1;
+        max-width: 50%;
+        padding: 80px 50px 0;
+        margin-left: 50px;
     }
     h1{
+        font-size: 5rem;
         text-align: start;
-        /* border: 1px solid #000; */
-        text-align: start;
-        font-size: 72px;
     }
 
     p{
-    text-align: left;
-    line-height: 2;
-    width: 450px;
-    padding-left: 0px;
+    text-align: start;
+    font-size: 18px;
+    padding-right: 55px;
     }
-    #section-1{
-        padding: 100px;
-        border: 1px solid #000;
-        max-width: 100%;
-        width: 1020px;
+
+#section-2-btn-wrapper{
+/* border: 2px solid red; */
+justify-content: left;
+padding: 35px 0 70px 0;
+}
+
+#section-2-img-wrapper{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    margin-top: 20px;
     }
-    
+
 }
